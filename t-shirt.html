@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Order Form</title>
+
+    <style>
+        body{
+            background-color: white;
+            background-image: linear-gradient(to right, rgb(34, 33, 33),white, white);
+            color:#283618;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        input{
+            border-color:black ;
+        }
+        #img{
+            background-image: url("backgoundimg.jpg");
+            height:1400px;
+            background-repeat: no-repeat;
+            position:sticky;
+            background-position: right; 
+        }
+
+        #img1{
+            position: relative;
+            width:50%;
+        }
+
+        button{
+            background-color: #b0ded8;
+            color: #2d525d;
+            font-size: larger;
+        }
+
+        button:hover{
+            color: #fb8500;
+        }
+
+        button:active{
+            background-color: green;
+        }
+
+        input{
+            background-color:#264653;
+            border:2px solid black; 
+            color: white;
+        }
+
+        ::placeholder{
+            color: aliceblue;
+        }
+
+        .add{
+            font-size:large;
+            
+        }
+        
+        </style>
+</head>
+<body>
+<div id="img">
+    
+<center>
+    <h1 style="color: #001524;" > T-shirt order form </h1>
+
+    <img src="backgroundimg1.jpg" alt="head" width="300" id="img1">
+</center>
+<br>
+<label for="tagline" style=" font-size:larger;">Enter tagline :
+
+<input type="text" name="tagline" id="tagline" style="background-color:#264653 ;
+border: 2px solid black; color: white;">
+</label>
+
+<p>
+    <label for="Quantity" style="font-size:larger;">Quantity :</label>
+    <input type="number" id="Quantity " name="Quantity" min="1" max="10">
+    
+</p>
+
+<hr style="width: 600px; position: relative; right:0%;">
+<p>
+    <h3>Choose the size</h3>
+    <select>
+        <option>size</option>
+        <option style="font-size:small;">Small</option>
+        <option style="font-size:large;">large</option>
+        <option style="font-size:larger;">XL</option>
+        <option style="font-size:x-large;">XXL</option>
+        <option style="font-size:xx-large;">XXXL</option>
+
+    </select>
+</p>
+<hr style="width: 600px; position: relative; right:0%;">
+
+<h3>Choose the color</h3>
+    
+<div>
+    <input type="radio" name="choose-color" id="1" value="A"/>
+    <label for="1" style="color:white ;"> White </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="choose-color" id="2" value="B" />
+    <label for="2" style="color:black ;"> Black </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="choose-color" id="3" value="C"/>
+    <label for="3" style="color:green ;"> Green </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="choose-color" id="4" value="D"/>
+    <label for="4" style="color:red ;"> Red </label>
+</div>
+
+<div>
+    <input type="radio" name="choose-color" id="5" value="E"/>
+    <label for="5" style="color:blue ;"> Blue </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="choose-color" id="8" value="D"/>
+    <label for="4" style="color:grey ;"> Grey </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="choose-color" id="7" value="D"/>
+    <label for="4" style="color:pink ;"> Pink </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="choose-color" id="6" value="D"/>
+    <label for="4" style="color:purple ;"> purple </label>
+</div>
+<br>
+<br>
+<textarea rows="7" cols="30" placeholder="Special request...." style=" border: 3px solid black; background-color: #b5838d;"></textarea>
+<hr style="width: 600px; position: relative; right:0%;">
+<h2>Cutomer Details</h2>
+
+<h3>Name</h3>
+    <div class="add">
+<label for="fname" name="fname">First Name:
+    <input type="text" id="fname" name="fname">
+</label>
+   
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<label for="lname" id="lname" name="lname">Last Name
+    <input type="text" id="lanme" name="lname">
+</label>
+</div>
+<br>
+
+<h3>Email</h3>
+<div class="add">
+<label for="email" name="email">Enter Your Email
+    <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+</label>
+</div>
+<br>
+<h3>Shipping Address</h3>
+<div class="add">
+<label for="address" >
+    <input size="50" type="text" id="address" name="address" placeholder="street address line 1"><br><br>
+    <input size="50" type="text" id="address1" name="address" placeholder="street address line 2">
+</label>
+<br><br>
+<label for="city"  name="city">city :
+    <input type="text" id="city" name="city">
+</label>
+&nbsp;&nbsp;
+<label for="state"  name="state">State :
+    <input type="text" id="state" name="state">
+</label>
+
+<br><br>
+<label for="postal code" name="pcode">postal code :
+    <input size="10" type="text" name="pcode" id="pcode">
+</label>
+</div>
+
+<h3 >Phone Number</h3>
+<label for="pnumber" name="pnumbr" style=" font-size:large;">phone number :
+    <input type="tel" name="pnumber" id="pnumber"  maxlength="10" />
+</label>
+<br><br>
+
+<hr style="width: 600px; position: relative; right:0%;">
+<h3 >Payment option</h3>
+<div class="add">
+<input type="radio" name="payment" id="cc" value="1">
+<label for="cc" value="1">Credit Card
+</label>
+<br>
+
+<input type="radio" name="payment" id="upi" value="2">
+<label for="upi" value="2">UPI
+</label>
+<br>
+<input type="radio" name="payment" id="dc" value="3">
+<label for="dc" value="2">Debit Card
+
+</label>
+</div>
+
+<br><br>
+<button type="submit">Place Order</button>
+
+<br>
+<br>
+</div>
+</body>
+</html>
